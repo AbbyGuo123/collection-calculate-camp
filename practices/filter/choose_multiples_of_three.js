@@ -1,13 +1,7 @@
 'use strict';
 
 function choose_multiples_of_three(collection) {
-  let result = [];
-  for(let o of collection){
-    if(o%3===0){
-      result.push(o);
-    }
-  }
-  return result;
+  return collection.filter(o=>o%3===0);
   //在这里写入代码
 }
 

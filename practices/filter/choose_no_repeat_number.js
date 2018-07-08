@@ -1,13 +1,8 @@
 'use strict';
 
 function choose_no_repeat_number(collection) {
-  let result=[];
-  for(let collectionbObject of collection){
-    if(!result.includes(collectionbObject)){
-      result.push(collectionbObject);
-    }
-  }
-  return result;
+  let result = new Map();
+  return collection.filter(o=>!result.has(o)&&result.set(o));
   //在这里写入代码
 }
 

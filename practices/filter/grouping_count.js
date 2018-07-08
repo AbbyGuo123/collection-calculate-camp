@@ -2,13 +2,7 @@
 
 function grouping_count(collection) {
     let result = [];
-    for(let o of collection){
-        if(result.hasOwnProperty(o)){
-            result[o] ++;
-        }
-        else
-            result[o] = 1;
-    }
+    collection.filter(item=>{result.hasOwnProperty(item)?result[item]++:result[item]=1;})
     return result;
 }
 
