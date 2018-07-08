@@ -1,8 +1,9 @@
 'use strict';
 
 function double_to_one(collection) {
-
-  //在这里写入代码
+  let result = [];
+  result= result.concat.apply(result,collection);
+  return result;
 }
 
 module.exports = double_to_one;
