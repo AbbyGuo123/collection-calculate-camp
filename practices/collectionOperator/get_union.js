@@ -7,11 +7,7 @@ function get_union(collection_a, collection_b) {
       collection.push(collectionaObject);
     }
   }
-  for(let collectionbObject of collection_b){
-    if(!collection.includes(collectionbObject)){
-      collection.push(collectionbObject);
-    }
-  }
+  collection.reverse;
   return collection;
 }
 

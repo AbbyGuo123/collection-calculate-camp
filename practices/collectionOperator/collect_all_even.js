@@ -2,12 +2,7 @@
 
 function collect_all_even(collection) {
   var collection_b =[];
-  for(let collectionObject of collection){
-    if(collectionObject%2==0)
-    collection_b.push(collectionObject);
-  }
-   
-   return collection_b;
+   return collection.filter(item=>item%2==0);
   //在这里写入代码
 }
 
